@@ -84,8 +84,84 @@
             #endregion
 
 
-          
+            #region Part 2
+            //    enum SecurityLevel
+            //{
+            //    Guest,
+            //    Developer,
+            //    Secretary,
+            //    DBA
+            //}
 
+            //class HiringDate
+            //{
+            //    public int Day { get; set; }
+            //    public int Month { get; set; }
+            //    public int Year { get; set; }
+
+            //    public HiringDate(int day, int month, int year)
+            //    {
+            //        Day = day;
+            //        Month = month;
+            //        Year = year;
+            //    }
+
+            //    public override string ToString()
+            //    {
+            //        return $"{Day:D2}/{Month:D2}/{Year}";
+            //    }
+            //}
+
+            //class Employee
+            //{
+            //    public int ID { get; set; }
+            //    public string Name { get; set; }
+            //    public SecurityLevel SecurityLevel { get; set; }
+            //    public decimal Salary { get; set; }
+            //    public HiringDate HireDate { get; set; }
+            //    public char Gender { get; set; }
+
+            //    public Employee(int id, string name, SecurityLevel securityLevel, decimal salary, HiringDate hireDate, char gender)
+            //    {
+            //        ID = id;
+            //        Name = name;
+            //        SecurityLevel = securityLevel;
+            //        Salary = salary;
+            //        HireDate = hireDate;
+            //        Gender = gender;
+
+            //        if (Gender != 'M' && Gender != 'F')
+            //        {
+            //            throw new ArgumentException("Gender must be either 'M' or 'F'.");
+            //        }
+            //    }
+
+            //    public override string ToString()
+            //    {
+            //        return $"ID: {ID}, Name: {Name}, Security Level: {SecurityLevel}, Salary: {String.Format("{0:C}", Salary)}, Hire Date: {HireDate}, Gender: {Gender}";
+            //    }
+            //}
+
+            //static void Part2()
+            //{
+            //    Employee[] EmpArr = new Employee[3];
+
+            //    EmpArr[0] = new Employee(1, "John Doe", SecurityLevel.DBA, 75000m, new HiringDate(15, 8, 2010), 'M');
+            //    EmpArr[1] = new Employee(2, "Jane Smith", SecurityLevel.Guest, 45000m, new HiringDate(10, 5, 2015), 'F');
+            //    EmpArr[2] = new Employee(3, "Alice Johnson", SecurityLevel.Developer, 60000m, new HiringDate(20, 3, 2012), 'F');
+
+            //    Array.Sort(EmpArr, (x, y) => x.HireDate.Year.CompareTo(y.HireDate.Year) != 0 ? x.HireDate.Year.CompareTo(y.HireDate.Year) :
+            //                                  x.HireDate.Month.CompareTo(y.HireDate.Month) != 0 ? x.HireDate.Month.CompareTo(y.HireDate.Month) :
+            //                                  x.HireDate.Day.CompareTo(y.HireDate.Day));
+
+            //    Console.WriteLine("Sorted Employees by Hire Date:");
+            //    foreach (var emp in EmpArr)
+            //    {
+            //        Console.WriteLine(emp);
+            //    }
+            //}
+            #endregion
+
+        }
     }
-}
 }
